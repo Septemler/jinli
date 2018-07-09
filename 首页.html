@@ -308,11 +308,41 @@
 			color: #999999;
 			font-size: 12px;
 		}
-		.bottom-one a span{
-         text-align:
+		.bottom-one ul{
+			padding-top: 26px;
 		}
+		.bottom-one ul li{
+			float: left;
+			padding-right:10px;
+			border-left:1px solid #999999 ;
+			font-size:12px ;
+		}
+		.bottom-one ul li:nth-child(1){
+			border-left:none ;
+		}
+		.bottom-one ul li:nth-child(2){
+			padding-left: 10px;
+		}
+		.bottom-two span{
+          color: #999999;
+          float: left;
+          font-size:12px ;
+		}
+		
 		.bottom-two ul li{
 			float: left;
+			padding-right: 10px;
+		}
+		.bottom-two ul{
+		}
+		.bottom-two ul li a:hover{
+		 color: #FFFFFF;
+		}
+		
+		.bottom-three p{
+			  color: #999999;
+			  font-size:12px ;
+			  line-height: 67px;
 		}
 		</style>
 	</head>
@@ -585,17 +615,21 @@
 		<div class="bottom">
 			<div class="main">
 				<div class="bottom-one">
-					<a href=""><span>网站地图</span></a>
-					<a href=""><span>集团下属公司</span></a>
+					<ul>
+						<li><a href="">网站地图</a></li>
+						<li><a href="">集团下属公司</a></li>
+					</ul>			
 				</div>
+				<br />
 				<div class="bottom-two">
 					<ul>
-						<span>增值电信业务经营许可证:</span>
+						<span>增值电信业务经营许可证:  </span>
 						<li><a href="">粤B2-20120350</a></li>
 						<li><a href="">粤B2-20120350</a></li>
 						<li><a href="">粤B2-20120350</a></li>
 						<li><a href="">粤B2-20120350</a></li>
 					</ul>
+					<br />
 				</div>
 				<div class="bottom-three">
                  <p>Copyright © 2013 深圳市金立通信设备有限公司 版权所有 .</p>
@@ -603,6 +637,6 @@
 				
 			</div>
 		</div>
-	
+     	
 	</body>
 </html>
