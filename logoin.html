@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+	    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+	   <style type="text/css">
+	   	
+			.nav{
+				width: 100%;
+				height: 103px;
+				background: #FFFFFF;
+				border-bottom: 2px solid #CCCCCC;
+			}
+			.imgs{
+				float: left;
+			    margin-top: 32px;
+			}
+			.nav-tabs{
+				float: right;
+				margin-top: 10px;
+				border-bottom: none;
+			}
+			.nav-tabs li{
+				float: left;
+				padding-left: 9px;
+				padding-right: 9px;
+				border-right:1px solid #e7e7e7 ;
+				
+			}
+			.nav ul{
+				margin-bottom: 0;
+			}
+			.nav li a{
+				text-decoration:none;
+				color: #9f9f9f;
+				font-size: 12px;
+			}
+			.nav-tabs li a:hover{
+				color: #ef4222;
+				border-bottom: none;
+			}
+			.nav-tabs li:nth-child(1) a{
+				color: #ef4222;
+			}
+			.nav-tabs li:nth-child(3){
+				border-right:none ;
+			}
+			.nav-tabs li:nth-child(4){
+				border-right:none ;
+				margin-right: 19px;
+			}
+			.nav-pills{
+				float: left;    
+				margin-top: 36px;
+				margin-left: 111px;
+			}
+			.nav-pills li{
+				float: left;
+				
+				padding-left: 52px;
+			}
+			.nav-pills li a{
+				color: #000000;
+				font-size: 16px;
+			}
+			.nav-pills li a:hover{
+				color: #ef4222;
+
+				text-decoration:none;
+			}
+			input{
+				float: right;
+				margin-top: 28px;
+				margin-left: 58px;
+				height: 28px;
+				font-size: 14px;
+				padding-left: 4px;
+			}
+		/*	导航栏结束*/
+		
+		
+		.banner{
+			height:662px ;
+			background: #f1f1f1;
+		}
+		.banner .main{
+			padding-top: 1px;
+		}
+		.banner-box{
+			height: 507px;
+			width: 390px;
+			margin-top: 87px;
+			border: 1px solid #dddddd;
+			background: #FFFFFF;
+			float: left;
+		}
+		.banner-tip{
+			font-size: 0;
+			position: relative;
+			text-align: center;
+		}
+		.banner-tip img{
+			max-width: 90%;
+            max-height: 90%;
+            padding-top: 20px;
+		}
+		.banner-small img{
+			width: 60px;
+			height: 60px;
+			padding: 2px;
+		}
+		.banner-small{
+			padding-top: 20px;
+			padding-left: 20px;
+			box-sizing: border-box;
+		}
+		.banner-small > li {
+            display: inline-block;
+            margin-right: 5px;
+            border: 1px solid #E5E5E5;
+        }
+		.banner-small > li:hover, 
+        .banner-small > li.active {   
+            border: 2px solid orangered;
+        }
+        .banner-right{
+         width:749px ;
+         float: right;
+         margin-top: 87px;
+        }
+        .banner-right ul p{
+        	font-size: 20px;
+        	color: #000000;
+        }
+        .banner-right ul li span{
+        	font-size: 12px;
+        }
+        .banner-right ul li:nth-child(1) span{
+        	font-size: 12px;
+        	color: #999999;
+        }
+        .banner-right ul li:nth-child(1){
+        	padding-bottom: 31px;
+        	border-bottom: 1px solid #E5E5E5;
+        }
+        .banner-right ul li:nth-child(2) a{
+         text-decoration:none;
+         color: #ef4222;
+         font-size: 18px;
+        }
+        .banner-right ul li:nth-child(2){
+         	line-height: 70px;
+         	border-bottom:1px solid #E5E5E5 ;
+         }
+         .banner-right ul li:nth-child(3){
+         	line-height: 58px;
+         }
+         .banner-right ul li:nth-child(4){
+         	line-height: 52px;
+         }
+        
+        .table{
+        	height: 133px;
+        	border-bottom: 1px solid #E3E3E3;
+        }
+        .table ol{
+        	line-height: 133px;
+        }
+        .table ol li a{
+        	text-decoration: none;
+        }
+        .table ol li a:hover{
+           color:#ef4222;
+        }
+        .table ol li a span{
+        	font-size: 14px;
+        	color: #777777;
+        }
+        .table ol li a i{
+        	font-size: 44px;
+        	color: #ef4222;
+        }
+        	
+		.footer{
+			height: 292px;
+		}
+		.footer a{
+			text-decoration:none;
+			color: #777777;
+		}
+		.footer ul{
+			padding: 0;
+			margin-top: 28px;
+		}
+		.footer ul li{
+			line-height: 33px;
+			font-size: 12px;
+		}
+		.footer h3{
+			font-size: 16px;
+			color: #777777;
+		}
+		.footer a:hover{
+			color: #ef4222;
+		}
+		.footer ul:nth-child(6) li{
+			float: right;
+		}
+		.footer ul img{
+			border: 3px solid #cccccc;
+		}
+		.footer span{
+			text-align: center;
+			display: block;
+			color: #cccccc;
+			font-size: 12px;
+			line-height: 22px;
+		}
+		
+		
+		.bottom{
+			height: 156px;
+			background: #333333;
+		}
+		.bottom a{
+			text-decoration:none;
+			color: #999999;
+			font-size: 12px;
+		}
+		.bottom-one ul{
+			padding-top: 26px;
+		}
+		.bottom-one ul li{
+			float: left;
+			padding-right:10px;
+			border-left:1px solid #999999 ;
+			font-size:12px ;
+		}
+		.bottom-one ul li:nth-child(1){
+			border-left:none ;
+		}
+		.bottom-one ul li:nth-child(2){
+			padding-left: 10px;
+		}
+		.bottom-two span{
+          color: #999999;
+          float: left;
+          font-size:12px ;
+		}
+		
+		.bottom-two ul li{
+			float: left;
+			padding-right: 10px;
+		}
+		.bottom-two ul{
+			padding-top: 20px;
+		}
+		.bottom-two ul li a:hover{
+		 color: #FFFFFF;
+		}
+		
+		.bottom-three p{
+			  color: #999999;
+			  font-size:12px ;
+			  line-height: 67px;
+		}
+	   </style> 
+	</head>
+	<body>
+		<div class="nav">
+			<div class="main">
+				<div class="imgs">
+					<a href="#"><img src="img/1_03.jpg"/></a>
+				</div>
+				<ul class="nav-tabs">
+					<li><a href="#">amigo账号登录</a></li>
+					<li><a href="#">原账号登录</a></li>
+					<li><a href="#">注册</a></li>
+					<li><a href="#">购物车</a></li>
+				</ul>
+				<ul class="nav-pills">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">手机</a></li>
+					<li><a href="#">配件</a></li>
+					<li><a href="#">服务</a></li>
+					<li><a href="#">下载</a></li>
+					<li><a href="#">社区</a></li>
+					<li><a href="#">amigoOS</a></li>
+					
+				</ul>
+				<input type="text" name="btn" id="btn" value="" placeholder="输入搜素内容" />
+			</div>
+		</div>
+	 
+	 <div class="banner">
+	 	<div class="main">
+	 		<div class="banner-box">
+	 		<div class="banner-tip">
+	 			<img src="img/01_big.jpg"/>
+	 		</div>
+	 		<ul class="banner-small">
+	 			<li class="active"><img src="img/01_thumb.jpg"/></li>
+	 			<li><img src="img/02_thumb.jpg"/></li>
+	 			<li><img src="img/03_thumb.jpg"/></li>
+	 			<li><img src="img/04_thumb.jpg"/></li>
+	 			<li><img src="img/05_thumb.jpg"/></li>
+	 		</ul>
+	 		</div>
+	 		<div class="banner-right">
+	 			<ul>
+	 				<li><p>金立S10C</p><span>1600万柔光自拍更美</span></li>
+	 				<li><span>现    价：</span><a href=""><i>￥1299</i></a></li>
+	 				<li><span>颜色：</span><span></span></li>
+	 				<li><span>购买数量：</span><span></span></li>
+	 			</ul>		
+	 		</div>
+	 	</div>
+	 </div>
+	 <script type="text/javascript">
+	 	    var btn1 = document.querySelector('.banner-tip') 
+			var ulbox = document.querySelector('.banner-small')
+			var libox = ulbox.querySelectorAll('li')
+			for (var i = 0; i < libox.length ; i++) {
+				libox[i].index = i
+                 libox[i].onmouseover = function() {
+                    bannerTip(this.index)
+               }
+            function bannerTip(index) {
+            for(var i = 0; i < libox.length; i++) {
+                libox[i].className = ''
+
+            }
+            libox[index].className = 'active'
+            var src = libox[index].querySelector('img').src
+            btn1.querySelector('img').src = src.replace('thumb', 'big')
+            }
+           }
+	 </script>
+	 
+	 <div class="table">
+	 	<div class="main">
+	 		<ol class="row">
+						<li class="col-xs-12 col-sm-6 col-md-3"><a href=""><i class="iconfont">&#xe6d0;</i>
+							<span >
+								7天
+							</span>
+							<span>退货保障</span>
+						</a></li>
+						<li class="col-xs-12 col-sm-6 col-md-3"><a href=""><i class="iconfont">&#xe63a;</i>
+							<span>30天</span>
+							<span>换货承诺</span>
+						</a></li>
+						<li class="col-xs-12 col-sm-6 col-md-3"><a href=""><i class="iconfont">&#xe606;</i>
+							<span>99元起</span>
+							<span>全场免运费</span>
+						</a></li>
+						<li class="col-xs-12 col-sm-6 col-md-3"><a href=""><i class="iconfont">&#xe6b1;</i>
+							<span>597家</span>
+							<span>售后服务点</span>
+						</a></li>
+					</ol>
+	 	</div>
+	 </div>
+	 
+	 <div class="footer .container">
+			<div class="main">
+				<ul class="col-xs-12 col-sm-6 col-md-2">
+					<h3>关于金立</h3>
+					<li><a href="">企业荣誉</a></li>
+					<li><a href="">金立体验店</a></li>
+					<li><a href="">代理商专区</a></li>
+					<li><a href="">加入金立</a></li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">需求资讯</a></li>
+				</ul>
+				<ul class="col-xs-12 col-sm-6 col-md-2">
+					<h3>新闻资讯</h3>
+					<li><a href="">公司新闻</a></li>
+					<li><a href="">媒体报道</a></li>
+				</ul>
+				<ul class="col-xs-12 col-sm-6 col-md-2">
+					<h3>购物指南</h3>
+					<li><a href="">购物流程</a></li>
+					<li><a href="">支付方式</a></li>
+					<li><a href="">支付方式</a></li>
+					<li><a href="">支付方式</a></li>
+					<li><a href="">支付方式</a></li>
+					<li><a href="">支付方式</a></li>
+				</ul>
+				<ul class="col-xs-12 col-sm-6 col-md-2">
+					<h3>售后服务</h3>
+					<li><a href="">售后政策</a></li>
+					<li><a href="">上门维修</a></li>
+					<li><a href="">物流查询</a></li>
+					<li><a href="">物流查询</a></li>
+					<li><a href="">物流查询</a></li>
+				</ul>
+
+                <ul class="col-xs-12 col-sm-6 col-md-2">
+					<h3>关注我们</h3>
+					<li><a href=""><i class="iconfont">&#xe63c;</i>  新浪微博</a></li>
+					<li><a href=""><i class="iconfont">&#xe79d;</i>  腾讯微博</a></li>
+					<li><a href=""><i class="iconfont">&#xe697;</i>  QQ空间</a></li>
+				</ul>
+
+                <ul class="col-xs-12 col-sm-6 col-md-2">
+                <li>
+                <img src="img/code.png"/>
+                <span>扫一扫关注微信</span></li>
+				</ul>
+
+
+
+			</div>
+		</div>
+	
+	
+    <div class="bottom">
+			<div class="main">
+				<div class="bottom-one">
+					<ul>
+						<li><a href="">网站地图</a></li>
+						<li><a href="">集团下属公司</a></li>
+					</ul>			
+				</div>
+				<br />
+				<div class="bottom-two">
+					<ul>
+						<span>增值电信业务经营许可证:  </span>
+						<li><a href="">粤B2-20120350</a></li>
+						<li><a href="">粤B2-20120350</a></li>
+						<li><a href="">粤B2-20120350</a></li>
+						<li><a href="">粤B2-20120350</a></li>
+					</ul>
+					<br />
+				</div>
+				<div class="bottom-three">
+                 <p>Copyright © 2013 深圳市金立通信设备有限公司 版权所有 .</p>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>

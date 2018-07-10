@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+		<style type="text/css">
+			
+			body{
+				position:relative ;
+		        background: url(img/jinli1.jpg) no-repeat;
+			}
+			.register{
+				width: 341px;
+				height: 540px;
+				position: absolute;
+				top: 94px;
+				right: 135px;
+				background: #FFFFFF;
+				text-align: center;
+				box-shadow: 5px 5px 5px #9E9E9E;
+			}
+			.register-img{
+				width: 110px;
+				height: 110px;
+				border-radius:50px ;
+				border: 1px solid #E5E5E5;
+				margin-top: 40px;
+				margin-left: 117px;
+				margin-bottom: 29px;
+			}
+			.register-img i img{
+				width: 100%;
+				height: 100%;
+			}
+			
+			.btn b{
+				color: #888888;
+				font-size: 18px;
+				float: left;
+				display: block;
+				padding-left: 28px;
+			}
+			.btn a span{
+				color: #ff9000;
+				font-size: 18px;
+				float: right;
+				padding-right: 37px;
+				padding-bottom: 60px;
+			}
+			.register form input{
+				width: 285px;
+				height: 44px;
+				border-radius:10px 10px;
+				margin-bottom: 20px;
+				border: 1px solid #E7E7E7;
+			}
+			.register form input:nth-child(2){
+				width: 150px;
+				height: 44px;
+				border-radius:10px 10px;
+				float: left;
+				margin-left: 27px;
+			}
+			.register form button{
+				width: 281px;
+				height: 44px;
+				background: #ff9b19;
+				border-radius:10px 10px ;
+				border: none;;
+			}
+			.register form button a{
+				text-decoration: none;
+				color: #FFFFFF;
+				font-size: 16px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="register">
+			<div class="register-img">
+				<i><img src="img/images/23_03.jpg"/></i>
+			</div>
+			<div class="btn">
+		    <b>注册</b>
+			<a href="regist.html"><span>登录 <i class="iconfont">&#xe783;</i></span></a>
+			</div>
+			
+        <form class="form-signin" id="form-test">
+            <input type="email" id="account" class="form-control" placeholder="请输入手机号" required autofocus>
+            <input type="password" id="password" class="form-control" placeholder="请输入验证码" required>
+            <button id="btn" class="btn" type="button"><a href="home.html">下一步</a></button>
+        </form>
+    </div>
+	</body>
+</html>

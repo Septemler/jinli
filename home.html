@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+		<style type="text/css">
+			
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.nav{
+				width: 100%;
+				height: 103px;
+				background: #FFFFFF;
+			}
+			.imgs{
+				float: left;
+			    margin-top: 32px;
+			}
+			.nav-tabs{
+				float: right;
+				margin-top: 10px;
+				border-bottom: none;
+			}
+			.nav-tabs li{
+				float: left;
+				padding-left: 9px;
+				padding-right: 9px;
+				border-right:1px solid #e7e7e7 ;
+				
+			}
+			.nav-tabs li a{
+				text-decoration:none;
+				color: #9f9f9f;
+				font-size: 12px;
+			}
+			.nav-tabs li a:hover{
+				color: #ef4222;
+				border-bottom: none;
+			}
+			.nav-tabs li:nth-child(1) a{
+				color: #ef4222;
+			}
+			.nav-tabs li:nth-child(3){
+				border-right:none ;
+			}
+			.nav-tabs li:nth-child(4){
+				border-right:none ;
+				margin-right: 19px;
+			}
+			.nav-pills{
+				float: left;    
+				margin-top: 36px;
+				margin-left: 111px;
+			}
+			.nav-pills li{
+				float: left;
+				
+				padding-left: 52px;
+			}
+			.nav-pills li a{
+				color: #000000;
+				font-size: 16px;
+			}
+			.nav-pills li a:hover{
+				color: #ef4222;
+
+				text-decoration:none;
+			}
+			input{
+				float: right;
+				margin-top: 28px;
+				margin-left: 58px;
+				height: 28px;
+				font-size: 14px;
+				padding-left: 4px;
+			}
+		/*	导航栏结束*/
+			
+		
+		   	.header{
+		   		width: 100%;
+		   		height: 640px;
+		   		/*overflow: hidden;*/
+		   		position: relative;
+		   	}
+		   	.header-img{
+		   		position: relative;
+		   		
+		   	}
+		   	.header-img li{
+		   		position: absolute;
+		   		top: 0;
+		   		left: 0;
+		   	}
+		   	.header-btn{
+		   		width: 114px;
+		   		height: 4px;
+		   		position: absolute;
+		   		top: 622px;
+		   		right: 581px;
+		   		
+		   	}
+		   	.header-btn li{
+		   		float: left;
+		   		width: 50px;
+		   		height: 4px;
+		   		background: #FFFFFF;
+		   	}
+		   	.header-btn li:nth-child(2){
+		   		float: right;
+		   	}
+		   	.header-btn li.current{
+		   		background: #ff6a00;
+		   	}   	
+		 /*  	轮播图end*/
+		
+		
+		.content{
+			height: 100%;
+		}
+		.content-one{
+			height: 450px;
+            background: #FFFFFF;
+		}
+		.content-one h2{
+			text-align: center;
+			padding-top: 50px;
+			margin-bottom:48px ;
+			font-size: 28px;
+			color: #000000;
+		}
+		.content-one ul{
+			padding: 0;
+		}
+		.content-one ul li{
+			width: 33%;
+		}
+        .content-two{
+        	height: 909px;
+        	background: #e5e5e5;
+        	box-sizing: content-box;
+        }
+         .content-left{
+         	width: 26.5%;
+         	padding: 0;
+         }
+          .content-right{
+          	width: 73%;
+          	padding: 0;
+          }
+         .content-right div:nth-child(4){
+         	margin-top: 5px;
+         }
+          .content-right div:nth-child(5){
+         	margin-top: 5px;
+         }
+          .content-right div:nth-child(6){
+         	margin-top: 5px;
+         }
+        .content-right div{
+        	width: 32.5%;
+        	height: 390px;
+        	background: #FFFFFF;
+        	margin-left: 5px;
+        	text-align: center;
+        }
+        .content-right img{
+        	max-width: 50%;
+        	max-height: 50%;
+        	margin-top: 24px;
+        	margin-bottom: 10px;
+        }
+        .content-right a:nth-child(2){
+        	line-height: 36px;
+        	font-size: 16px;
+        	color: #000000;
+        	text-decoration:none;
+        }
+        .content-right a:nth-child(3){
+        	text-decoration:none;
+        	font-size: 12px;
+        	color:#9e9e9e ;
+        	line-height: 6px;
+        }
+        .content-right a:nth-child(4){
+        	text-decoration:none;
+        	color: #fe7c00;
+        	font-size:22px ;
+        	line-height: 62px;
+        }
+        .content-two h2{
+			text-align: center;
+			padding-top: 48px;
+			margin-bottom:42px ;
+			font-size: 28px;
+			color: #000000;
+		}
+		.content-three{
+			height: 902px;
+			background: #e5e5e5;
+		}
+		.content-three ul div:hover{
+			box-shadow: 8px 8px 15px #9E9E9E;
+			transform: translate3d(0,-4px,4px);
+		}
+		.content-three ul div{
+			float: left;
+			width: 380px;
+			height: 344px;
+			margin-top: 15px;
+			margin-right: 15px;
+			transform-style: preserve-3d;
+		}
+		.content-three ul h2{
+			text-align: center;
+			padding-top: 51px;
+			margin-bottom:32px ;
+			
+		}
+		.content-three ul h2 a{
+			text-decoration:none;
+			font-size: 28px;
+			color: #000000;
+		}
+		.content-four{
+			height: 664px;
+			border-bottom: 1px solid #eaeaea;
+		}
+		.content-four ul h2{
+			text-align: center;
+			padding-top: 49px;
+			margin-bottom:49px ;
+		}
+		.content-four ul h2 a{
+			text-decoration:none;
+			font-size: 28px;
+			color: #000000;
+		}
+		.content-four ol li i{
+			font-size: 44px;
+			color: #f15539;
+		}
+		.content-four ol{
+			margin-top: 60px;	
+		}
+		.content-four ol li{
+			width: 25%;
+			height: 45px;
+		}
+		.content-four ol li a{
+			text-decoration:none;
+			color: #777777;
+		}
+		.content-four ol li a:hover{
+			color: #f15539;
+		}
+		
+		.footer{
+			height: 292px;
+		}
+		.footer a{
+			text-decoration:none;
+			color: #777777;
+		}
+		.footer ul{
+			padding: 0;
+			margin-top: 38px;
+		}
+		.footer ul li{
+			line-height: 33px;
+			font-size: 12px;
+		}
+		.footer h3{
+			font-size: 16px;
+			color: #777777;
+		}
+		.footer a:hover{
+			color: #ef4222;
+		}
+		.footer ul:nth-child(6) li{
+			float: right;
+		}
+		.footer ul img{
+			border: 3px solid #cccccc;
+		}
+		.footer span{
+			text-align: center;
+			display: block;
+			color: #cccccc;
+			font-size: 12px;
+			line-height: 22px;
+		}
+		
+		
+		
+		.bottom{
+			height: 156px;
+			background: #333333;
+		}
+		.bottom a{
+			text-decoration:none;
+			color: #999999;
+			font-size: 12px;
+		}
+		.bottom-one ul{
+			padding-top: 26px;
+		}
+		.bottom-one ul li{
+			float: left;
+			padding-right:10px;
+			border-left:1px solid #999999 ;
+			font-size:12px ;
+		}
+		.bottom-one ul li:nth-child(1){
+			border-left:none ;
+		}
+		.bottom-one ul li:nth-child(2){
+			padding-left: 10px;
+		}
+		.bottom-two span{
+          color: #999999;
+          float: left;
+          font-size:12px ;
+		}
+		
+		.bottom-two ul li{
+			float: left;
+			padding-right: 10px;
+		}
+		.bottom-two ul{
+		}
+		.bottom-two ul li a:hover{
+		 color: #FFFFFF;
+		}
+		
+		.bottom-three p{
+			  color: #999999;
+			  font-size:12px ;
+			  line-height: 67px;
+		}
+		</style>
+	</head>
+	<body>
+	<script src="jquery.js"></script>
+	<!--	导航栏-->
+		<div class="nav">
+			<div class="main">
+				<div class="imgs">
+					<a href="#"><img src="img/1_03.jpg"/></a>
+				</div>
+				<ul class="nav-tabs">
+					<li><a href="regist.html">amigo账号登录</a></li>
+					<li><a href="#">原账号登录</a></li>
+					<li><a href="#">注册</a></li>
+					<li><a href="#">购物车</a></li>
+				</ul>
+				<ul class="nav-pills">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">手机</a></li>
+					<li><a href="#">配件</a></li>
+					<li><a href="#">服务</a></li>
+					<li><a href="#">下载</a></li>
+					<li><a href="#">社区</a></li>
+					<li><a href="#">amigoOS</a></li>
+					
+				</ul>
+				<input type="text" name="btn" id="btn" value="" placeholder="输入搜素内容" />
+			</div>
+		</div>
+	<!--	导航栏end-->
+		
+		<!--大图-->
+		<div class="header">
+			<ul class="header-img">
+			<li><a href="#"><img src="img/1_06.jpg"/></a></li>
+			<li><a href="#"><img src="img/3_02.jpg"/></a></li>
+			</ul>
+			<ol class="header-btn">
+				<li class="current"></li>
+				<li></li>
+			</ol>
+		</div>
+		<script type="text/javascript">
+	  var fade = (function() {
+      var $box = $('.header-img');
+      var $uuBox = $('.header-btn');
+      var timer = null;
+      var index = 0;
+      return {
+          init() {
+              this.events();
+              this.autoPlay();
+          },
+          showImage() {
+             $uuBox.children("li").eq(index).addClass('current').siblings().removeClass("current");
+              $box.children("li").eq(index).fadeIn().siblings().fadeOut();
+              
+          },
+          autoPlay() {
+              var _this = this;
+              clearInterval(timer)
+              timer = setInterval(function() {
+                  index++;
+                  if(index == $box.children("li").length) {
+                      index = 0;
+                  }
+                  _this.showImage(index);
+
+              },4000)
+          },
+          events(){
+            var _this = this;
+            $uuBox.children('li').on('click', function() {
+                // console.log($(this).index());
+                index = $(this).index();
+                _this.showImage();
+                _this.autoPlay();
+            })
+          }
+      }
+  })()
+  fade.init()
+
+		</script>
+		<!--
+                    广告图end
+        -->
+		
+		
+		<!--内容-->
+		<div class="content .container">
+			<div class="content-one ">
+		      <div class="main">
+		      	<h2>明星产品</h2>
+		      	<ul class="row">
+		      		<li class="12 col-sm-6 col-md-4"><a href=""><img src="img/28_1514454113062.jpg"/></a></li>
+		      		<li class="12 col-sm-6 col-md-4"><a href=""><img src="img/19_1516348649876.jpg"/></a></li>
+		      		<li class="12 col-sm-6 col-md-4"><a href=""><img src="img/28_1514454181297.jpg"/></a></li>
+		      	</ul>
+		      </div>
+			</div>
+			
+			
+			<div class="content-two">
+				<div class="main">
+					<h2>热卖推荐</h2>
+					<div class="content-left col-md-4">
+						<a href=""><img src="img/29_1514541655531.jpg"/></a>
+					</div>
+					<div class="content-right col-md-8">
+						<div class="col-md-4"><a href=""><img src="img/28_1514451528464.png"/></a>
+						<a href=""><p>金立f6</p></a>
+						<a href=""><p>5.7英寸高清全面屏，四曲面机身</p></a>
+						<a href=""><p>￥1399</p>
+						</a></div>
+						<div class="col-md-4"><a href=""><img src="img/28_1514451554121.png"/></a>
+						<a href=""><p>金立f6</p></a>
+						<a href=""><p>5.7英寸高清全面屏，四曲面机身</p></a>
+						<a href=""><p>￥1399</p>
+						</a>							
+						</div>
+						<div class="col-md-4"><a href=""><img src="img/28_1514451623552.png"/></a>
+							<a href=""><p>金立f6</p></a>
+						<a href=""><p>5.7英寸高清全面屏，四曲面机身</p></a>
+						<a href=""><p>￥1399</p>
+						</a>
+						</div>
+						<div class="col-md-4"><a href=""><img src="img/28_1514451679603.png"/></a>
+							<a href=""><p>金立f6</p></a>
+						<a href=""><p>5.7英寸高清全面屏，四曲面机身</p></a>
+						<a href=""><p>￥1399</p>
+						</a>
+						</div>
+						<div class="col-md-4"><a href=""><img src="img/28_1514451724867.png"/></a>
+							<a href=""><p>金立f6</p></a>
+						<a href=""><p>5.7英寸高清全面屏，四曲面机身</p></a>
+						<a href=""><p>￥1399</p>
+						</a>
+						</div>
+						<div class="col-md-4"><a href=""><img src="img/28_1514451757927.png"/></a>
+							<a href=""><p>金立f6</p></a>
+						<a href=""><p>5.7英寸高清全面屏，四曲面机身</p></a>
+						<a href=""><p>￥1399</p>
+						</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="content-three">
+			<div class="main">
+            <ul>
+            	<h2><a href="">精美配件</a></h2>
+			 <a href=""><div>
+			 	<img src="img/28_1514453044261.jpg"/>
+			 </div></a> 
+			 <a href=""><div >
+			 	<img src="img/28_1514453089776.jpg"/>
+			 </div></a> 
+			 <a href=""><div >
+			 	<img src="img/28_1514453140686.jpg"/>
+			 </div></a> 
+			 <a href=""><div >
+			 	<img src="img/28_1514453165062.jpg"/>
+			 </div></a> 
+			 <a href=""><div >
+			 	<img src="img/28_1514453197940.jpg"/>
+			 </div></a> 
+			  <a href=""><div>
+			 	<img src="img/28_1514453223487.jpg"/>
+			 </div></a> 
+			 </ul>
+			</div>			
+		</div>	
+			
+			<div class="content-four .container">
+				<div class="main">
+					<ul class="row">
+						<h2><a href="">品牌动态</a></h2>
+						<li class="col-xs-12 col-sm-6 col-md-4"><a href=""><img src="img/01_1517453309499.jpg"/></a></li>
+						<li class="col-xs-12 col-sm-6 col-md-4"><a href=""><img src="img/01_1517453664732.jpg"/></a></li>
+						<li class="col-xs-12 col-sm-6 col-md-4"><a href=""><img src="img/01_1517453382045.jpg"/></a></li>
+					</ul>
+					<ol class="row">
+						<li class="col-xs-12 col-sm-6 col-md-3"><a href=""><i class="iconfont">&#xe6d0;</i>
+							<span>7天</span>
+							<span>退货保障</span>
+						</a></li>
+						<li class="col-xs-12 col-sm-6 col-md-3"><a href=""><i class="iconfont">&#xe63a;</i>
+							<span>30天</span>
+							<span>换货承诺</span>
+						</a></li>
+						<li class="col-xs-12 col-sm-6 col-md-3"><a href=""><i class="iconfont">&#xe606;</i>
+							<span>99元起</span>
+							<span>全场免运费</span>
+						</a></li>
+						<li class="col-xs-12 col-sm-6 col-md-3"><a href=""><i class="iconfont">&#xe6b1;</i>
+							<span>597家</span>
+							<span>售后服务点</span>
+						</a></li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		
+		<!--
+               内容end
+        -->
+        
+        
+        <!--尾部-->
+		<div class="footer .container">
+			<div class="main">
+				<ul class="col-xs-12 col-sm-6 col-md-2">
+					<h3>关于金立</h3>
+					<li><a href="">企业荣誉</a></li>
+					<li><a href="">金立体验店</a></li>
+					<li><a href="">代理商专区</a></li>
+					<li><a href="">加入金立</a></li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">需求资讯</a></li>
+				</ul>
+				<ul class="col-xs-12 col-sm-6 col-md-2">
+					<h3>新闻资讯</h3>
+					<li><a href="">公司新闻</a></li>
+					<li><a href="">媒体报道</a></li>
+				</ul>
+				<ul class="col-xs-12 col-sm-6 col-md-2">
+					<h3>购物指南</h3>
+					<li><a href="">购物流程</a></li>
+					<li><a href="">支付方式</a></li>
+					<li><a href="">支付方式</a></li>
+					<li><a href="">支付方式</a></li>
+					<li><a href="">支付方式</a></li>
+					<li><a href="">支付方式</a></li>
+				</ul>
+				<ul class="col-xs-12 col-sm-6 col-md-2">
+					<h3>售后服务</h3>
+					<li><a href="">售后政策</a></li>
+					<li><a href="">上门维修</a></li>
+					<li><a href="">物流查询</a></li>
+					<li><a href="">物流查询</a></li>
+					<li><a href="">物流查询</a></li>
+				</ul>
+
+                <ul class="col-xs-12 col-sm-6 col-md-2">
+					<h3>关注我们</h3>
+					<li><a href=""><i class="iconfont">&#xe63c;</i>  新浪微博</a></li>
+					<li><a href=""><i class="iconfont">&#xe79d;</i>  腾讯微博</a></li>
+					<li><a href=""><i class="iconfont">&#xe697;</i>  QQ空间</a></li>
+				</ul>
+
+                <ul class="col-xs-12 col-sm-6 col-md-2">
+                <li>
+                <img src="img/code.png"/>
+                <span>扫一扫关注微信</span></li>
+				</ul>
+
+
+
+			</div>
+		</div>
+		
+		<!--
+             尾部end
+        -->
+		
+		<div class="bottom">
+			<div class="main">
+				<div class="bottom-one">
+					<ul>
+						<li><a href="">网站地图</a></li>
+						<li><a href="">集团下属公司</a></li>
+					</ul>			
+				</div>
+				<br />
+				<div class="bottom-two">
+					<ul>
+						<span>增值电信业务经营许可证:  </span>
+						<li><a href="">粤B2-20120350</a></li>
+						<li><a href="">粤B2-20120350</a></li>
+						<li><a href="">粤B2-20120350</a></li>
+						<li><a href="">粤B2-20120350</a></li>
+					</ul>
+					<br />
+				</div>
+				<div class="bottom-three">
+                 <p>Copyright © 2013 深圳市金立通信设备有限公司 版权所有 .</p>
+				</div>
+				
+			</div>
+		</div>
+     	
+	</body>
+</html>
