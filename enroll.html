@@ -74,6 +74,14 @@
 				color: #FFFFFF;
 				font-size: 16px;
 			}
+			.register form span{
+				color:red;
+				font-size:16px ;
+				display: none;
+				position: absolute;
+				left: 27px;
+				top: 242px;
+			}
 		</style>
 	</head>
 	<body>
@@ -87,10 +95,49 @@
 			</div>
 			
         <form class="form-signin" id="form-test">
-            <input type="email" id="account" class="form-control" placeholder="请输入手机号" required autofocus>
-            <input type="password" id="password" class="form-control" placeholder="请输入验证码" required>
-            <button id="btn" class="btn" type="button"><a href="home.html">下一步</a></button>
+            <input type="text" id="account" class="form-control" placeholder="请输入手机号" required autofocus><span>请输入正确的手机号</span>
+            <input type="password" id="password" class="form-control" placeholder="请输入验证码" required><span>请输入验证码</span>
+            <button id="btn" class="btn" type="button" value="下一步"><a href="home.html">下一步</a></button>
         </form>
     </div>
+    <script type="text/javascript">
+    	var aInput = document.getElementsByTagName('input');
+    	var btn = document.getElementById('btn');
+    	var oForm = document.getElementsByTagName('form')[0];
+    	var xiayibu = [0,0];
+    	aInput[0].onblur = function() {
+    		var str = this.value;
+    		var reg = /^1[3,5,7,8]\d{9}$/;
+    		if(reg.test(str)){
+				this.parentNode.children[1].style.display='none';
+				xiayibu[0]=1;
+			}else{
+				this.parentNode.children[1].style.display='block';
+				xiayibu[0]=0;
+
+			}
+
+    	}
+    	aInput[1].onblur = function () {
+    		var str = this.value;
+    		var reg =/^([0-9]|[a-z]|[A-Z]){6}$/;
+    		if(reg.test(str)){
+				this.parentNode.children[1].style.display='none';
+				xiayibu[1]=1;
+			}else{
+				this.parentNode.children[1].style.display='block';
+				xiayibu[1]=0;
+
+			}
+    	}
+    	oForm.onsubmit=function(){
+			for(var i = 0 ; i < xiayibu.length ; i++){
+				if(xiayibu[i]==0){
+					return false;
+				}
+			}			
+		}
+
+    </script>
 	</body>
 </html>
